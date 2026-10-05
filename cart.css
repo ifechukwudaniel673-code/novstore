@@ -1,0 +1,276 @@
+/* =========================
+   CART PAGE
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f8ff;
+  color: #172033;
+}
+
+/* Main Cart Section */
+.carts {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.cart-left {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 80, 200, 0.08);
+}
+
+.cart-title {
+  font-size: 32px;
+  color: #1456d9;
+  margin-bottom: 8px;
+}
+
+.cart-left > p {
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+/* Cart Item */
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #e5eaf2;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+/* Product Image */
+.cart-item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #e5eaf2;
+}
+
+/* Product Description */
+.pro-desc {
+  flex: 1;
+}
+
+.pro-desc h3 {
+  font-size: 18px;
+  margin-bottom: 7px;
+  color: #172033;
+}
+
+.category {
+  font-size: 14px;
+  color: #7b8495;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1456d9;
+}
+
+/* =========================
+   QUANTITY
+========================= */
+
+.quantity {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d7deea;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.quantity button {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-color: #f0f5ff;
+  color: #1456d9;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.quantity button:hover {
+  background-color: #1456d9;
+  color: white;
+}
+
+.quantity-value {
+  width: 35px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Total Price */
+.total-price {
+  font-size: 18px;
+  color: #172033;
+  min-width: 100px;
+  text-align: right;
+}
+
+/* Remove Button */
+.remove-item {
+  border: none;
+  background: transparent;
+  color: #1456d9;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.remove-item:hover {
+  color: #e63946;
+}
+
+/* Continue Shopping */
+.continue-shopping {
+  margin-top: 25px;
+  padding: 12px 22px;
+  border: 2px solid #1456d9;
+  border-radius: 8px;
+  background-color: white;
+  color: #1456d9;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.continue-shopping:hover {
+  background-color: #1456d9;
+  color: white;
+}
+
+/* =========================
+   RIGHT SIDE - SUMMARY
+========================= */
+
+.cart-right {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 80, 200, 0.08);
+}
+
+.cart-right h1 {
+  font-size: 24px;
+  color: #1456d9;
+  margin-bottom: 25px;
+}
+
+/* Summary Rows */
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #e5eaf2;
+  color: #596273;
+}
+
+.summary-item span:last-child {
+  font-weight: 600;
+  color: #172033;
+}
+
+/* Total */
+.summary-item.total {
+  border-bottom: none;
+  margin-top: 10px;
+  padding-top: 20px;
+}
+
+.summary-item.total span {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1456d9;
+}
+
+/* Checkout Button */
+.Checkout-button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1456d9;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.Checkout-button:hover {
+  background-color: #0d3fa5;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 900px) {
+  .carts {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .carts {
+    width: 95%;
+    margin: 25px auto;
+  }
+
+  .cart-left,
+  .cart-right {
+    padding: 20px;
+  }
+
+  .cart-item {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .cart-item-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .pro-desc {
+    min-width: 150px;
+  }
+
+  .total-price {
+    margin-left: auto;
+  }
+}

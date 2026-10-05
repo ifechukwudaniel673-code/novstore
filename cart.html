@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <script
+      src="https://kit.fontawesome.com/2bf94939c6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="DANIEL.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="#" class="logo"> Nova<span>Store</span> </a>
+
+        <div class="nav-links">
+          <a href="./index.html" class="active">Home</a>
+
+          <a href="#products">Products</a>
+
+          <a href="#top-sellers">Top Sellers</a>
+
+          <a href="#">About</a>
+        </div>
+
+        <div class="nav-actions">
+          <!-- Search -->
+
+          <div class="nav-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Search products..."
+            />
+          </div>
+
+          <!-- Profile -->
+
+          <button class="profile-btn">
+            <div class="profile-avatar">
+              <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div class="profile-info">
+              <span>Hello</span>
+              <strong>My Account</strong>
+            </div>
+
+            <i class="fa-solid fa-chevron-down profile-arrow"></i>
+          </button>
+
+          <!-- Cart -->
+
+          <a href="./cart.html">
+            <button class="cart-btn">
+              <i class="fa-solid fa-bag-shopping"></i>
+
+              <span>Cart</span>
+
+              <span class="cart-count">0</span>
+            </button>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="carts">
+      <div class="cart-left">
+        <h1 class="cart-title">Your cart</h1>
+        <p>Review your Items and proceed to cheekout</p>
+        <div class="cart-items-container">
+          <div class="cart-item">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR96wLIHhl3o2xFD3iMPApCprZJD5k20nrfQzUQ93UQYg&s=10"
+              alt="Macbook Pro 14"
+              class="cart-item-image"
+            />
+            <div class="pro-desc">
+              <h3>Macbook Pro 14</h3>
+              <p class="category">laptop</p>
+              <p class="price">$1,999.99</p>
+            </div>
+            <div class="quantity">
+              <button class="decrease">-</button>
+              <span class="quantity-value">1</span>
+              <button class="increase">+</button>
+            </div>
+            <h1 class="total-price">$1,999.99</h1>
+            <button class="remove-item">
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
+          </div>
+
+          <div class="cart-item">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtQmQgmoOC7fTcbPUJc5t5xwJlvaxrY3DDEqyJSmurEQ&s=10"
+              alt="Macbook Pro 14"
+              class="cart-item-image"
+            />
+            <div class="pro-desc">
+              <h3>apple ear pods</h3>
+              <p class="category">ear pod</p>
+              <p class="price">$1,999.99</p>
+            </div>
+            <div class="quantity">
+              <button class="decrease">-</button>
+              <span class="quantity-value">1</span>
+              <button class="increase">+</button>
+            </div>
+            <h1 class="total-price">$1,999.99</h1>
+            <button class="remove-item">
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
+          </div>
+
+          <div class="cart-item">
+            <img
+              src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQHXupA42OYDExHpTLbZJYh0Y54EgJxQsaMLbGM3UqYHQLf7wwszp3ajurLe7xQUhLAFyU_yq1S2tbh0Akyz0J0DLQpy95ZRiQwMX-GsLF5UfohIaj52XYtBNFfnE2Ar2Zf64b9-w8Fjg&usqp=CAc"
+              alt="Macbook Pro 14"
+              class="cart-item-image"
+            />
+            <div class="pro-desc">
+              <h3>iphone 16</h3>
+              <p class="category">phone</p>
+              <p class="price">$1,999.99</p>
+            </div>
+            <div class="quantity">
+              <button class="decrease">-</button>
+              <span class="quantity-value">1</span>
+              <button class="increase">+</button>
+            </div>
+            <h1 class="total-price">$1,999.99</h1>
+            <button class="remove-item">
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
+          </div>
+        </div>
+        <button class="continue-shopping">Continue Shopping</button>
+      </div>
+      <div class="cart-right">
+        <h1>Order Summary</h1>
+        <div class="summary-item">
+          <span>Subtotal</span>
+          <span>₦15,999.97</span>
+        </div>
+
+        <div class="summary-item">
+          <span>Shipping</span>
+          <span>₦0.00</span>
+        </div>
+
+        <div class="summary-item">
+          <span>Tax</span>
+          <span>₦300.00</span>
+        </div>
+
+        <div class="summary-item total">
+          <span>Total</span>
+          <span>₦6,349.97</span>
+        </div>
+        <a href="./checkout.html">
+          <button class="Checkout-button">Checkout</button>
+        </a>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#" class="logo"> Nova<span>Store</span> </a>
+
+          <p>Quality technology for work, creativity and everyday life.</p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Shop</h3>
+
+          <a href="#products">Products</a>
+          <a href="#top-sellers">Top Sellers</a>
+          <a href="#">New Arrivals</a>
+        </div>
+
+        <div class="footer-links">
+          <h3>Company</h3>
+
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Careers</a>
+        </div>
+
+        <div class="footer-links">
+          <h3>Support</h3>
+
+          <a href="#">Help Center</a>
+          <a href="#">Delivery</a>
+          <a href="#">Returns</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 NovaStore. All rights reserved.</p>
+      </div>
+    </footer>
+  <script src="cart.js"></script>
+  </body>
+</html>

@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment - NovaStore</title>
+    <link rel="stylesheet" href="payment.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="#" class="logo">Nova<span>Store</span></a>
+
+        <div class="nav-links">
+          <a href="./index.html">Home</a>
+          <a href="#">Products</a>
+          <a href="#">Categories</a>
+          <a href="#">About</a>
+        </div>
+
+        <div class="cart">
+          🛒
+          <span>3</span>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Payment</h1>
+      <p class="subtitle">Choose your payment method to complete your order.</p>
+
+      <!-- STEPS -->
+      <div class="steps">
+        <div class="step active">
+          <div class="circle">✓</div>
+          <p>Shipping</p>
+        </div>
+
+        <div class="line active-line"></div>
+
+        <div class="step active">
+          <div class="circle">2</div>
+          <p>Payment</p>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+          <div class="circle">3</div>
+          <p>Review</p>
+        </div>
+      </div>
+
+      <div class="payment-layout">
+        <!-- LEFT -->
+        <section class="left-side">
+          <div class="card">
+            <h2>Select Payment Method</h2>
+
+            <div class="payment-option selected">
+              <input type="radio" checked />
+              <div class="payment-icon">▣</div>
+
+              <div>
+                <strong>Credit / Debit Card</strong>
+                <p>Pay with your card</p>
+              </div>
+            </div>
+
+            <div class="payment-option">
+              <input type="radio" />
+              <div class="payment-icon">♜</div>
+
+              <div>
+                <strong>Bank Transfer</strong>
+                <p>Pay via bank transfer</p>
+              </div>
+            </div>
+
+            <div class="payment-option">
+              <input type="radio" />
+              <div class="payment-icon">▣</div>
+
+              <div>
+                <strong>Pay on Delivery</strong>
+                <p>Pay when you receive your order</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD DETAILS -->
+          <div class="card">
+            <h2>Card Details</h2>
+
+            <label>Card Number</label>
+            <div class="input-box">
+              <input type="text" placeholder="1234 5678 9012 3456" />
+              <span>▣</span>
+            </div>
+
+            <div class="row">
+              <div>
+                <label>Expiry Date</label>
+                <input type="text" placeholder="MM / YY" />
+              </div>
+
+              <div>
+                <label>CVV</label>
+                <input type="text" placeholder="123" />
+              </div>
+            </div>
+
+            <label>Name on Card</label>
+            <input type="text" placeholder="Enter name on card" />
+            <a href="./sucess.html">
+              <button class="pay-btn">Pay ₦2,950,000</button>
+            </a>
+            <p class="secure">
+              🔒 Your payment information is secure and encrypted.
+            </p>
+          </div>
+        </section>
+
+        <!-- RIGHT -->
+        <section class="order-summary">
+          <div class="summary-header">
+            <h2>Order Summary <span>(3 items)</span></h2>
+          </div>
+
+          <div class="product">
+            <img
+              src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
+              alt="MacBook"
+            />
+            <div>
+              <h3>MacBook Pro 14"</h3>
+              <p>Qty: 1</p>
+            </div>
+            <strong>₦1,500,000</strong>
+          </div>
+
+          <div class="product">
+            <img
+              src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1"
+              alt="AirPods"
+            />
+            <div>
+              <h3>Apple AirPods Pro</h3>
+              <p>Qty: 1</p>
+            </div>
+            <strong>₦250,000</strong>
+          </div>
+
+          <div class="product">
+            <img
+              src="https://images.unsplash.com/photo-1592286927505-2fd0a1a0f3f7"
+              alt="iPhone"
+            />
+            <div>
+              <h3>iPhone 16 Pro</h3>
+              <p>Qty: 1</p>
+            </div>
+            <strong>₦1,200,000</strong>
+          </div>
+
+          <div class="summary-total">
+            <div>
+              <span>Subtotal</span>
+              <strong>₦2,950,000</strong>
+            </div>
+
+            <div>
+              <span>Shipping</span>
+              <strong>₦0</strong>
+            </div>
+
+            <div class="total">
+              <span>Total</span>
+              <strong>₦2,950,000</strong>
+            </div>
+          </div>
+
+          <div class="secure-payment">
+            🛡️
+            <div>
+              <strong>Secure Payment</strong>
+              <p>100% secure and encrypted</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h2>Nova<span>Store</span></h2>
+        <p>
+          Your one-stop shop for the latest tech<br />
+          products and accessories.
+        </p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <p>Home</p>
+        <p>Products</p>
+        <p>Categories</p>
+        <p>About</p>
+      </div>
+
+      <div>
+        <h3>Help</h3>
+        <p>FAQs</p>
+        <p>Shipping</p>
+        <p>Returns</p>
+        <p>Contact</p>
+      </div>
+
+      <div>
+        <h3>Follow Us</h3>
+        <p class="social">f　◎　♥　▶</p>
+        <small>© 2025 NovaStore. All rights reserved.</small>
+      </div>
+    </footer>
+  </body>
+</html>
